@@ -8,7 +8,9 @@
 
 During the course of this workshop, you will be need to have the ability to fork accounts and to set up a Personal Access Token to integrate with JFrog Pipelines.
 
-- #### JFrog Platform Account (TBD LINK)
+- #### JFrog Platform Account 
+Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP***
+
 This is a free account! However, in order to utilize Pipelines, you will need to provide a credit card, but you will **NOT** be charged unless you choose to upgrade your account. It takes a few minutes for JFrop Pipelines to spin up, so please enter your card details now so it will be ready when you need it. 
 
 When signing up for the JFrog Platform Cloud Free Tier, it is recommended that you select **AWS** and the **US West 2 (Oregon)** region for this workshop.
@@ -19,7 +21,8 @@ After you receive your credentials by email and on your first login, select the 
 
 ![Screen Shot 2022-03-24 at 5 58 42 AM](https://user-images.githubusercontent.com/116261/159911604-a455eba7-fdbb-4962-bd3c-384b6ea48a79.png)
 
-- #### Civo Account (recommended for workshop) (TBD LINK)
+- #### Civo Account (recommended for workshop)
+Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP OR BY EMAIL.***
 
 If you are attending a live workshop event, you will be provided access to a temporary account with $250 credit that does not require a credit card. This account will be used to create the Kubernetes cluster that will be used during the workshop for deployments. The Civo account is not required, but recommended unless you already have a separate Kubernetes cluster you would like to use.
 
