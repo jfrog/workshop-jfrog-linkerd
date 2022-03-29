@@ -1,5 +1,3 @@
-# spring-petclinic-microservices-config
+# Hands on Workshop: DEPLOY AND MONITOR YOUR APPLICATION WITH JFROG AND LINKERD
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-Configuration repository for distributed Spring Petclinic application modified by JFrog
+## Instructions - Part 1 (Standup existing application)
