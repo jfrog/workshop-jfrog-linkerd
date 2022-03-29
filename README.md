@@ -94,3 +94,13 @@ api-gateway   LoadBalancer   10.7.250.24   34.1.2.22   80:32675/TCP   18m
 ```
 
 Browse to that IP in your browser to confirm the application is running.
+
+### Step 4: Create deployment pipeline in JFrog Pipelines
+Create it!
+Try it!
+### Step 5: Modify pipeline to deploy Linkerd Control Plane
+Make it smart
+Use a custom runner?
+### Step 6: Inject workloads & redeploy Petclinic
+Take a look at metrics, etc
+### Step 7: Use a private Docker registry
