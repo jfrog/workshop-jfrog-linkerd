@@ -1,0 +1,18 @@
+pipelines:
+  - name: linkerd-deploy
+    configuration:
+      runtime:
+        type: image
+        image:
+          custom:
+            name: alpine/k8s
+            tag: v0.1.0
+            autoPull: true
+            registry: artifactory
+            sourceRepository: linkerd-docker-local
+    steps:
+    - name: linkerd-check
+      type: Bash
+      execution:
+        onExecute:
+          - linkerd version
