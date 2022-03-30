@@ -5,7 +5,7 @@ resources:
       path: mjmckay/workshop-jfrog-linkerd
       gitProvider: MyRepo
       branches:
-        include: master
+        include: main
       buildOn:
         commit:                false
         pullRequestCreate:     false
