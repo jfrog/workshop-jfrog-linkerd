@@ -11,7 +11,7 @@ pipelines:
             registry: artifactory
             sourceRepository: linkerd-docker-local
     steps:
-    - name: linkerd-check
+    - name: linkerdCheck
       type: Bash
       execution:
         onExecute:
