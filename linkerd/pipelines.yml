@@ -31,3 +31,5 @@ pipelines:
       execution:
         onExecute:
           - linkerd install | kubectl apply -f -
+          - kubectl wait --for=condition=available -n linkerd --all deployments
+          - linkerd viz install | kubectl apply -f -
