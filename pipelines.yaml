@@ -13,6 +13,8 @@ pipelines:
     steps:
     - name: linkerdCheck
       type: Bash
+      integrations:
+      - name: civo_k8s
       execution:
         onExecute:
           - linkerd version
