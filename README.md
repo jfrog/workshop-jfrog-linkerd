@@ -149,9 +149,13 @@ Name this integration ***MyArtifactory*** and click on the ***Get API Key*** to 
 
 #### Step 4.5: Create a Custom Runner Image to use in your Pipeline
 
+Create Docker registries in your JFrog platform!
+
 Use the linkerd/Dockerfile to build and push a custom image to your JFrog registry
 
 #### Step 4.6: Set up a Pipeline Source
+
+!!! Make sure your GitRepo resource is set correctly before creating the Pipeline Source !!!
 
 Modify the spring-petclinic-cloud pipelines.yml file for your JFrog instance and GitHub fork.
 
