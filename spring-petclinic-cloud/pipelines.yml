@@ -1,5 +1,5 @@
 resources:
-  - name: gitRepo
+  - name: petclinic_repo
     type: GitRepo
     configuration:
       path: mjmckay/workshop-jfrog-linkerd
@@ -20,7 +20,7 @@ pipelines:
           integrations:
             - name: MyCluster
           inputResources:
-            - name: gitRepo
+            - name: petclinic_repo
         execution:
           onExecute:
             - cd $res_gitRepo_resourcePath/spring-petclinic-cloud
