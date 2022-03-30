@@ -11,8 +11,6 @@ During the course of this workshop, you will be need to have the ability to fork
 - #### JFrog Platform Account 
 Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP***
 
-This is a free account! However, in order to utilize Pipelines, you will need to provide a credit card, but you will **NOT** be charged unless you choose to upgrade your account. It takes a few minutes for JFrop Pipelines to spin up, so please enter your card details now so it will be ready when you need it. 
-
 When signing up for the JFrog Platform Cloud Free Tier, it is recommended that you select **AWS** and the **US West 2 (Oregon)** region for this workshop.
 
 ![Screen Shot 2022-03-24 at 5 50 19 AM](https://user-images.githubusercontent.com/116261/159910660-6090b18e-31ad-4b6d-88ac-06f76df2f309.png)
@@ -20,6 +18,13 @@ When signing up for the JFrog Platform Cloud Free Tier, it is recommended that y
 After you receive your credentials by email and on your first login, select the following to ensure you get access to all of the features we will be using:
 
 ![Screen Shot 2022-03-24 at 5 58 42 AM](https://user-images.githubusercontent.com/116261/159911604-a455eba7-fdbb-4962-bd3c-384b6ea48a79.png)
+
+This is a free account! However, in order to utilize Pipelines, you will need to provide a credit card, but you will **NOT** be charged unless you choose to upgrade your account. It takes a few minutes for JFrop Pipelines to spin up, so please enter your card details now so it will be ready when you need it.
+
+![Screen Shot 2022-03-29 at 3 08 38 PM](https://user-images.githubusercontent.com/116261/160889250-e4160911-1364-4480-8666-bb8707bb6c84.png)
+
+![Screen Shot 2022-03-29 at 3 09 43 PM](https://user-images.githubusercontent.com/116261/160889052-d0ab292a-9868-4bbd-978a-8a5a6291fcf5.png)
+
 
 - #### Civo Account (recommended for workshop)
 Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP OR BY EMAIL.***
@@ -99,7 +104,33 @@ api-gateway   LoadBalancer   10.7.250.24   34.1.2.22   80:32675/TCP   18m
 Browse to that IP in your browser to confirm the application is running.
 
 ### Step 4: Create deployment pipeline in JFrog Pipelines
-Create it!
+
+#### Step 4.1: Set up GitHub Integration
+
+You will need to set up a personal access token in your GitHub account. Select ***Settings*** in the dropdown at the top right of your GitHub account web UI.
+
+![Screen Shot 2022-03-29 at 3 37 08 PM](https://user-images.githubusercontent.com/116261/160889370-26e7770c-b305-4538-8793-42ee0f752c37.png)
+
+In the left menu of your Profile page, scroll down and click ***Developer Settings***
+
+![Screen Shot 2022-03-29 at 3 41 17 PM](https://user-images.githubusercontent.com/116261/160889855-baf66092-f54a-4d0a-b6fa-3a71163f3330.png)
+
+Click ***Personal Access Tokens*** and then the ***Generate new token*** button.
+
+![Screen Shot 2022-03-29 at 3 42 11 PM](https://user-images.githubusercontent.com/116261/160890153-6235e46b-26d2-485b-9e2e-ed131f5a8976.png)
+
+Make sure the following scopes are selected:
+
+* repo (all)
+* admin:public_key (read, write)
+* admin:repo_hook (read, write)
+
+![Screen Shot 2022-03-29 at 3 48 42 PM](https://user-images.githubusercontent.com/116261/160890203-57a1e829-55e2-4382-89b4-6fa18b884904.png)
+
+
+
+
+
 Try it!
 ### Step 5: Modify pipeline to deploy Linkerd Control Plane
 Make it smart

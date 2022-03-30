@@ -1,0 +1,35 @@
+resources:
+  - name: workshop_repo
+    type: GitRepo
+    configuration:
+      gitProvider: GitHub
+      path: cpretzer/workshop-jfrog-linkerd
+      branches:
+        include: main
+      buildOn:
+        commit: true
+        pullRequestCreate: true
+        releaseRequestCreate: true
+
+pipelines:
+  - name: linkerdDeploy
+    configuration:
+      runtime:
+        type: image
+        image:
+          custom:
+            name: cpretzer.jfrog.io/linkerd-docker-local/alpine/k8s
+            tag: v0.1.0
+            autoPull: true
+            registry: artifactory
+            sourceRepository: linkerd-docker-local
+      inputResources:
+      - name: workshop_repo
+    steps:
+    - name: linkerdCheck
+      type: Bash
+      integrations:
+      - name: civo_k8s
+      execution:
+        onExecute:
+          - linkerd version
