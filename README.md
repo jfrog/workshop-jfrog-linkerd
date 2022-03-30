@@ -105,7 +105,7 @@ Browse to that IP in your browser to confirm the application is running.
 
 ### Step 4: Create deployment pipeline in JFrog Pipelines
 
-#### Step 4.1: Set up GitHub Integration
+#### Step 4.1: Create a Personal Access Token
 
 You will need to set up a personal access token in your GitHub account. Select ***Settings*** in the dropdown at the top right of your GitHub account web UI.
 
@@ -127,14 +127,43 @@ Make sure the following scopes are selected:
 
 ![Screen Shot 2022-03-29 at 3 48 42 PM](https://user-images.githubusercontent.com/116261/160890203-57a1e829-55e2-4382-89b4-6fa18b884904.png)
 
+Click the ***Generate Token*** button and then copy the value somewhere for safekeeping. You'll need this in the next step.
 
+#### Step 4.2: Create a GitHub Pipelines Integration
 
+In your JFrog Platform instance, navigate to the Administration Module, expand the ***Pipelines*** menu and select ***Integrations***.
 
+On the top right of the Integrations page, click the ***Add an Integration*** button. Name your integration ***MyRepo***.
 
-Try it!
+![Screen Shot 2022-03-24 at 10 41 29 AM](https://user-images.githubusercontent.com/116261/160891357-a0d7637d-e001-4c89-a14b-b6a24208da8d.png)
+
+#### Step 4.3: Create a Kubernetes Pipelines Integration
+
+Create a Kubernetes Pipelines Integration in the same manner as the previous step. Name this integration ***MyCluster***.
+
+The value in the kubeconfig field will need to be retrieved from your Civo cluster.
+
+#### Step 4.4: Create an Artifactory Pipelines Integration
+
+Name this integration ***MyArtifactory*** and click on the ***Get API Key*** to automatically set up your key.
+
+#### Step 4.5: Create a Custom Runner Image to use in your Pipeline
+
+Use the linkerd/Dockerfile to build and push a custom image to your JFrog registry
+
+#### Step 4.6: Set up a Pipeline Source
+
+Modify the spring-petclinic-cloud pipelines.yml file for your JFrog instance and GitHub fork.
+
+Create the JFrog Pipeline Source.
+
+#### Step 4.7 Run the pipeline!
+
+Manually run the pipeline and begin your troubleshooting journey.
+
 ### Step 5: Modify pipeline to deploy Linkerd Control Plane
 Make it smart
 Use a custom runner?
+
 ### Step 6: Inject workloads & redeploy Petclinic
 Take a look at metrics, etc
-### Step 7: Use a private Docker registry
