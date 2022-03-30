@@ -9,7 +9,6 @@ resources:
       buildOn:
         commit: true
         pullRequestCreate: true
-        releaseRequestCreate: true
 
 pipelines:
   - name: linkerdDeploy
@@ -23,13 +22,14 @@ pipelines:
             autoPull: true
             registry: artifactory
             sourceRepository: linkerd-docker-local
-      inputResources:
-      - name: workshop_repo
     steps:
-    - name: linkerdCheck
+    - name: linkerdDeploy
       type: Bash
-      integrations:
-      - name: civo_k8s
+      configuration:
+        integrations:
+        - name: civo_k8s
       execution:
         onExecute:
-          - linkerd version
+          - linkerd install | kubectl apply -f -
+          - kubectl wait --for=condition=available -n linkerd --all deployments
+          - linkerd viz install | kubectl apply -f -
