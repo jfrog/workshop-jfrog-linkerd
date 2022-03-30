@@ -1,5 +1,5 @@
 pipelines:
-  - name: linkerd-deploy
+  - name: linkerdDeploy
     configuration:
       runtime:
         type: image
