@@ -107,6 +107,27 @@ Browse to that IP in your browser to confirm the application is running.
 
 #### Step 4.1: Set up GitHub Integration
 
+You will need to set up a personal access token in your GitHub account. Select ***Settings*** in the dropdown at the top right of your GitHub account web UI.
+
+![Screen Shot 2022-03-29 at 3 37 08 PM](https://user-images.githubusercontent.com/116261/160889370-26e7770c-b305-4538-8793-42ee0f752c37.png)
+
+In the left menu of your Profile page, scroll down and click ***Developer Settings***
+
+![Screen Shot 2022-03-29 at 3 41 17 PM](https://user-images.githubusercontent.com/116261/160889855-baf66092-f54a-4d0a-b6fa-3a71163f3330.png)
+
+Click ***Personal Access Tokens*** and then the ***Generate new token*** button.
+
+![Screen Shot 2022-03-29 at 3 42 11 PM](https://user-images.githubusercontent.com/116261/160890153-6235e46b-26d2-485b-9e2e-ed131f5a8976.png)
+
+Make sure the following scopes are selected:
+
+* repo (all)
+* admin:public_key (read, write)
+* admin:repo_hook (read, write)
+
+![Screen Shot 2022-03-29 at 3 48 42 PM](https://user-images.githubusercontent.com/116261/160890203-57a1e829-55e2-4382-89b4-6fa18b884904.png)
+
+
 
 
 
