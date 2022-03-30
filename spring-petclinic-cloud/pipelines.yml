@@ -23,7 +23,7 @@ pipelines:
             - name: petclinic_repo
         execution:
           onExecute:
-            - cd $res_gitRepo_resourcePath/spring-petclinic-cloud
+            - cd $res_petclinic_repo_resourcePath/spring-petclinic-cloud
             - export REPOSITORY_PREFIX=springcommunity
             - mkdir $HOME/.kube
             - echo $int_MyCluster_kubeconfig > $HOME/.kube/config
