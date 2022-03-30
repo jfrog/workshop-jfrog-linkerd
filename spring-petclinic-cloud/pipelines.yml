@@ -26,8 +26,7 @@ pipelines:
             - cd $res_gitRepo_resourcePath/spring-petclinic-cloud
             - export REPOSITORY_PREFIX=springcommunity
             - mkdir $HOME/.kube
-            - echo $res_MyCluster_kubeconfig
-            - echo $res_MyCluster_kubeconfig > $HOME/.kube/config
+            - echo $int_MyCluster_kubeconfig > $HOME/.kube/config
             - cat $HOME/.kube/config
             - kubectl apply -f k8s/init-namespace
             - kubectl apply -f k8s/init-services
