@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       path: mjmckay/workshop-jfrog-linkerd
-      gitProvider: MyRepo
+      gitProvider: MyGitHub
       branches:
         include: main
       buildOn:
