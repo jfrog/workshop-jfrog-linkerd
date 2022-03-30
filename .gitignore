@@ -1,2 +1,5 @@
 *.iml
 .idea/
+.clusterid
+.networkid
+.civo-kubeconfig
