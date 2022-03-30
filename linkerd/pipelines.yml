@@ -22,14 +22,12 @@ pipelines:
             autoPull: true
             registry: artifactory
             sourceRepository: linkerd-docker-local
-      inputResources:
-      - name: workshop_repo
     steps:
-    - name: linkerdCheck
+    - name: linkerdDeploy
       type: Bash
       configuration:
         integrations:
         - name: civo_k8s
       execution:
         onExecute:
-          - linkerd version
+          - linkerd install | kubectl apply -f -
