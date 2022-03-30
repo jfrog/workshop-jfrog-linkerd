@@ -18,7 +18,7 @@ pipelines:
         type: image
         image:
           custom:
-            name: f5test.jfrog.io/default-docker-virtual/alpine/k8s
+            name: f5test.jfrog.io/default-docker-virtual/alpine/k8slinkerd
             tag: v0.1.0
             autoPull: true
             registry: MyArtifactory
