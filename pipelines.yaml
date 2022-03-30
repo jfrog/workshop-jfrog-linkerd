@@ -1,3 +1,16 @@
+resources:
+  - name: workshop_repo
+    type: GitRepo
+    configuration:
+      gitProvider: GitHub
+      path: cpretzer/workshop-jfrog-linkerd
+      branches:
+        include: main
+      buildOn:
+        commit: true
+        pullRequestCreate: true
+        releaseRequestCreate: true
+
 pipelines:
   - name: linkerdDeploy
     configuration:
@@ -10,6 +23,8 @@ pipelines:
             autoPull: true
             registry: artifactory
             sourceRepository: linkerd-docker-local
+      inputResources:
+      - name: workshop_repo
     steps:
     - name: linkerdCheck
       type: Bash
