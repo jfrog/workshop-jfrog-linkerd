@@ -1,4 +1,8 @@
-# Hands on Workshop: DEPLOY AND MONITOR YOUR APPLICATION WITH JFROG AND LINKERD
+[Additional Resources](#additional-resources)
+
+# Hands on Workshop: Deploy and Monitor your Application with JFrog and Linkerd
+
+This workshop will guide you through deploying the PetClinic application (cloud native version!) to your own Kubernetes cluster, after which you learn how to automate this deploy using JFrog Pipelines and finally, how to incorporate and use the Linkerd service mesh.
 
 ## Instructions
 
@@ -11,7 +15,7 @@ During the course of this workshop, you will be need to have the ability to fork
 - #### JFrog Platform Account 
 Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP***
 
-When signing up for the JFrog Platform Cloud Free Tier, it is recommended that you select **AWS** and the **US West 2 (Oregon)** region for this workshop.
+Working through this on your own? Sign up for a JFrog Platform Account [here](https://bit.ly/MelissaWKSHP).
 
 ![Screen Shot 2022-03-24 at 5 50 19 AM](https://user-images.githubusercontent.com/116261/159910660-6090b18e-31ad-4b6d-88ac-06f76df2f309.png)
 
@@ -167,7 +171,13 @@ Manually run the pipeline and begin your troubleshooting journey.
 
 ### Step 5: Modify pipeline to deploy Linkerd Control Plane
 Make it smart
-Use a custom runner?
+Use a custom runner!
 
 ### Step 6: Inject workloads & redeploy Petclinic
 Take a look at metrics, etc
+
+### Additional Resources
+- [JFrog Docker Registry Documentation](https://www.jfrog.com/confluence/display/JFROG/Docker+Registry)
+- [JFrog Pipelines Developer Guide](https://www.jfrog.com/confluence/display/JFROG/Pipelines+Developer+Guide)
+- [Getting Started with Linkerd](https://linkerd.io/2.11/getting-started/)
+- [Linkerd Documentation](https://linkerd.io/2.11/overview/)
