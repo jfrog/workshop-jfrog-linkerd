@@ -33,6 +33,8 @@ This is a free account! However, in order to utilize Pipelines, you will need to
 - #### Civo Account (recommended for workshop)
 Live workshop attendees: ***USE LINK PROVIDED DURING WORKSHOP OR BY EMAIL.***
 
+Working through this on your own? Sign up for a JFrog Platform Account [here](https://www.civo.com/signup).
+
 If you are attending a live workshop event, you will be provided access to a temporary account with $250 credit that does not require a credit card. This account will be used to create the Kubernetes cluster that will be used during the workshop for deployments. The Civo account is not required, but recommended unless you already have a separate Kubernetes cluster you would like to use.
 
 Once you sign up for Civo, create a new cluster. Name your cluster whatever you like, choose "Medium" size, and keep the rest of the default settings.
