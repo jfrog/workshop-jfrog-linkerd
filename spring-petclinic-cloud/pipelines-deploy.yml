@@ -13,16 +13,6 @@ resources:
 
 pipelines:
   - name: petclinic_deploy
-    configuration:
-      runtime:
-        type: image
-        image:
-          custom:
-            name: mjmckay.jfrog.io/default-docker-virtual/alpine/k8slinkerd
-            tag: v0.1.0
-            autoPull: true
-            registry: MyArtifactory
-            sourceRepository: default-docker-virtual
     steps:
       - name: kubernetes_deploy
         type: Bash
