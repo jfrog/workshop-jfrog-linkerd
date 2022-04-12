@@ -183,3 +183,4 @@ Take a look at metrics, etc
 - [JFrog Pipelines Developer Guide](https://www.jfrog.com/confluence/display/JFROG/Pipelines+Developer+Guide)
 - [Getting Started with Linkerd](https://linkerd.io/2.11/getting-started/)
 - [Linkerd Documentation](https://linkerd.io/2.11/overview/)
+- [Full Workshop Slides](https://docs.google.com/presentation/d/1nrvYK9FTJFDh3R3yVTBcIoJCqPTf66jHr4T-YxBL-HM/edit?usp=sharing)
